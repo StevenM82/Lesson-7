@@ -52,11 +52,20 @@
   border: 1px solid black;
 }
 
-.main-content {
+article {
+  line-height: 1.5;
+}
+
+.main-content-1 {
   display: flex;
   flex-flow: row wrap;
   float: left;
-  width: 74.8%;
+}
+
+.main-content-2 {
+  display: flex;
+  flex-flow: row wrap;
+  float: left;
 }
 
 .side-bar {
@@ -68,4 +77,14 @@
   background-color: rgba(255, 255, 255, 0);
   border: 1px black solid;
   margin: 0px;
+}
+
+.place-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
 }
