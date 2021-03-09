@@ -13,12 +13,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 h3 {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .header {
@@ -27,8 +28,8 @@ h3 {
   justify-content: flex-end;
   align-items: center;
   height: 200px;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 4rem;
+  font-weight: 700;
   border: 1px solid black;
 }
 
