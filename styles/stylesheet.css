@@ -1,15 +1,35 @@
 * {
   box-sizing: border-box;
   margin: 1px;
+  font-family: arial, sans-serif;
+  font-size: 17px;
 }
 
 .body {
   margin: 0px 100px;
 }
+
+.h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
 .header {
   display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 200px;
+  font-size: 40px;
+  font-weight: bold;
   border: 1px solid black;
-  justify-content: center;
 }
 
 .header-img {
@@ -56,13 +76,11 @@ article {
   line-height: 1.5;
 }
 
-.main-content-1 {
-  display: flex;
-  flex-flow: row wrap;
-  float: left;
+h3 {
+  padding-top: 20px;
 }
 
-.main-content-2 {
+.main-content {
   display: flex;
   flex-flow: row wrap;
   float: left;
@@ -73,10 +91,22 @@ article {
   flex-flow: column wrap;
   justify-content: flex-start;
   float: left;
-  width: 25%;
+  width: 24.8%;
   background-color: rgba(255, 255, 255, 0);
   border: 1px black solid;
   margin: 0px;
+}
+
+.calendar-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.register-holder {
+  display: flex;
+  align-items: center;
 }
 
 .place-holder {
