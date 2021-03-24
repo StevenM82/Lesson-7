@@ -13,6 +13,8 @@
   font-size: 2rem;
 }
 
+h2 { font-size: 1.5rem; }
+
 h3 {
   font-weight: 700;
   font-size: 1.2rem;
@@ -38,10 +40,7 @@ h3 {
   display: table;
 }
 
-.nav {
-  display: grid;
-  grid-column: 1 / span 12;
-}
+.nav { grid-column: 1 / span 12; }
 
 .menu {
   display: flex;
@@ -62,9 +61,7 @@ a { text-decoration: none; }
 article { line-height: 1.5; }
 
 .main-content {
-  display: flex;
-  flex-flow: row wrap;
-  float: left;
+  display: grid;
   margin: 0px 100px;
 }
 
@@ -105,14 +102,14 @@ article { line-height: 1.5; }
 }
 
 .policy {
-  grid-column: 1 / span 3;
-  grid-row-end: 13;
+  grid-column: 1 / span 12;
+  grid-row: 12;
   color: rgb(255, 255, 255);
+  font-size: 0.75rem;
+  padding-left: 10px;
 }
 
-[class*="col-"] {
-  border: 1px solid black;
-}
+[class*="col-"] { border: 1px solid black; }
 
 .col-1 { width: 8.33%; }
 .col-2 { width: 16.66%; }
