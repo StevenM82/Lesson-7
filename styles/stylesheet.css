@@ -32,14 +32,15 @@ h3 {
   font-weight: 700;
 }
 
-.header-img {
-  width: 100%;
-}
-
 .row::after {
   content: "";
   clear: both;
   display: table;
+}
+
+.nav {
+  display: grid;
+  grid-column: 1 / span 12;
 }
 
 .menu {
@@ -56,17 +57,9 @@ h3 {
   padding-left: 0px;
 }
 
-.menu > li {
-  border: 1px solid black;
-}
+a { text-decoration: none; }
 
-a {
-  text-decoration: none;
-}
-
-article {
-  line-height: 1.5;
-}
+article { line-height: 1.5; }
 
 .main-content {
   display: flex;
@@ -104,9 +97,7 @@ article {
   grid-template-rows: repeat(12, 1fr);
 }
 
-.footer {
-  grid-area: 1 / 1 / span 12 / span 12;
-}
+.footer { grid-area: 1 / 1 / span 12 / span 12; }
 
 .address {
   grid-column: 1 / 3;
