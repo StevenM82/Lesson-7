@@ -3,14 +3,13 @@
   margin: 1px;
   font-family: arial, sans-serif;
   font-size: 17px;
-  color: rgb(0, 0, 0);
 }
 .hidden {
   position: relative;
   left: -10000px;
   top: auto;
 }
-.hidden:focus { left: 0; }
+/*.hidden:focus { left: 0; }*/
 .sr-only {
   position: absolute;
   left: -10000px;
@@ -47,12 +46,10 @@ h3 {
   grid-area: 1 / 1 / 2 / span 12;
 }
 .header {
-  display: flex;
-  grid-area: 1 / 2 / 1 / span 10;
-  justify-content: center;
+  grid-area: 1 / 5 / 1 / span 7;
   font-size: 4rem;
   font-weight: 700;
-  color: rgb(3, 163, 223);
+  color: rgb(3, 162, 223);
 }
 .header-img-1 {
   grid-area: 1 / 4 / 1 / 4;
@@ -73,8 +70,11 @@ h3 {
   font-weight: 700;
 }
 
-a { text-decoration: none; }
-a:hover, a:focus { color: rgb(255, 0, 0); }
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover, a:focus { color: rgb(235, 0, 0); }
 
 article {
   line-height: 1.5;
@@ -134,6 +134,7 @@ article {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-area: 6 / 2 / 7 / span 10;
+  grid-gap: 5px;
 }
 .figure-1 { grid-area: 1 / 1 / 4 / 3; }
 .figure-2 {
@@ -185,9 +186,10 @@ article {
 .col-12 { width: 100%; }
 
 /*Added skip navigation*/
-
 /*Added underline on nav bar to indicate current page*/
-/*Changed :hover and :focus color for better contrast*/
-/*Added sr-only to indicate which menu buttons work in both menu and footer*/
+/*Added .sr-only to indicate which menu buttons work*/
 /*Added :focus to links*/
-/*Changed wording for links on index.html page side bar*/
+
+/*Page can be zoomed from 75% to 200% without breaking*/
+/*Removed overly busy background image*/
+/*Changed :hover and :focus color for better contrast*/
