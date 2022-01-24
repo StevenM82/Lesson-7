@@ -56,7 +56,9 @@ h3 {
   padding-top: 10px;
   padding-left: 55px;
 }
-.nav { grid-area: 2 / 1 / 2 / span 12; }
+.nav {
+  grid-area: 2 / 1 / 2 / span 12;
+}
 .menu {
   display: flex;
   flex-direction: row;
@@ -73,15 +75,26 @@ a {
   text-decoration: none;
   color: black;
 }
-a:hover, a:focus { color: rgb(235, 0, 0); }
+a:hover,
+a:focus {
+  color: rgb(235, 0, 0);
+}
 
 article {
   line-height: 1.5;
 }
-.article-center { grid-area: 2 / 1 / 6 / 10;}
-.article-center-2 { grid-area: 7 / 1 / 12 / 12;}
-.article-left { grid-area: 2 / 1 / 6 / 8; }
-.article-right { grid-area: 7 / 6 / 12 / 13; }
+.article-center {
+  grid-area: 2 / 1 / 6 / 10;
+}
+.article-center-2 {
+  grid-area: 7 / 1 / 12 / 12;
+}
+.article-left {
+  grid-area: 2 / 1 / 6 / 8;
+}
+.article-right {
+  grid-area: 7 / 6 / 12 / 13;
+}
 .image-right {
   grid-area: 2 / 10 / 6 / 13;
   padding-left: 50px;
@@ -135,17 +148,23 @@ article {
   grid-area: 6 / 2 / 7 / span 10;
   grid-gap: 5px;
 }
-.figure-1 { grid-area: 1 / 1 / 4 / 3; }
+.figure-1 {
+  grid-area: 1 / 1 / 4 / 3;
+}
 .figure-2 {
   grid-area: 3 / 3 / 3 / 5;
   z-index: 3;
 }
-.figure-2-1 { grid-area: 10 / 2 / 12 / 6; }
+.figure-2-1 {
+  grid-area: 10 / 2 / 12 / 6;
+}
 .figure-3 {
   grid-area: 1 / 3 / 3 / 5;
   z-index: 2;
 }
-.figure-4 { grid-area: 2 / 10 / 4 / 12; }
+.figure-4 {
+  grid-area: 2 / 10 / 4 / 12;
+}
 .video {
   grid-area: 2 / 6 / 4 / 7;
   z-index: 4;
@@ -158,8 +177,12 @@ article {
   grid-template-rows: repeat(2, 1fr);
   grid-area: 8 / 2 / 10 / span 10;
 }
-.footer { grid-area: 1 / 1 / span 12 / span 12; }
-.logo-white { grid-area: 3 / 2 / 3 / 3; }
+.footer {
+  grid-area: 1 / 1 / span 12 / span 12;
+}
+.logo-white {
+  grid-area: 3 / 2 / 3 / 3;
+}
 .address {
   grid-area: 9 / 10 / 12 / 13;
   color: rgb(255, 255, 255);
@@ -172,18 +195,42 @@ article {
 
 /*[class*="col-"] { border: 1px solid black; }*/
 
-.col-1 { width: 8.33%; }
-.col-2 { width: 16.66%; }
-.col-3 { width: 25%; }
-.col-4 { width: 33.33%; }
-.col-5 { width: 41.66%; }
-.col-6 { width: 50%; }
-.col-7 { width: 58.33%; }
-.col-8 { width: 64.66%; }
-.col-9 { width: 75%; }
-.col-10 { width: 83.33%; }
-.col-11 { width: 91.66%; }
-.col-12 { width: 100%; }
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 64.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
 
 /*Added skip navigation*/
 /*Added underline on nav bar to indicate current page*/
