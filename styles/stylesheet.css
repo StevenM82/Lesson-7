@@ -35,14 +35,13 @@
 h3 {
   font-weight: 700;
   font-size: 1.2rem;
-  padding-top: 20px;
   color: rgb(27, 68, 127);
 }
 
 /*Header*/
 .header-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: subgrid;
   grid-area: 1 / 1 / 2 / span 12;
 }
 .header {
@@ -57,7 +56,7 @@ h3 {
   padding-left: 55px;
 }
 .nav {
-  grid-area: 2 / 1 / 2 / span 12;
+  grid-area: 2 / 2 / 2 / 12;
 }
 .menu {
   display: flex;
@@ -79,32 +78,13 @@ a:hover,
 a:focus {
   color: rgb(235, 0, 0);
 }
-
-article {
-  line-height: 1.5;
-}
-.article-center {
-  grid-area: 2 / 1 / 6 / 10;
-}
-.article-center-2 {
-  grid-area: 7 / 1 / 12 / 12;
-}
-.article-left {
-  grid-area: 2 / 1 / 6 / 8;
-}
-.article-right {
-  grid-area: 7 / 6 / 12 / 13;
-}
-.image-right {
-  grid-area: 2 / 10 / 6 / 13;
-  padding-left: 50px;
-}
-
+/*--Main content--*/
 .main-content {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: subgrid;
   grid-template-rows: auto;
   grid-area: 2 / 2 / 5 / span 10;
+  padding-bottom: 2rem;
 }
 .main-content-2 {
   display: grid;
@@ -123,6 +103,25 @@ article {
   background-color: rgba(255, 255, 255, 0);
   border: 1px black solid;
   margin: 0px;
+}
+article {
+  line-height: 1.5;
+}
+.article-center {
+  grid-area: 2 / 1 / 6 / 9;
+}
+.article-center-2 {
+  grid-area: 7 / 1 / 12 / 12;
+}
+.article-left {
+  grid-area: 2 / 1 / 6 / 8;
+}
+.article-right {
+  grid-area: 7 / 6 / 12 / 13;
+}
+.image-right {
+  grid-area: 2 / 9 / 6 / 13;
+  padding-left: 50px;
 }
 
 .calendar {
@@ -163,7 +162,7 @@ article {
   z-index: 2;
 }
 .figure-4 {
-  grid-area: 2 / 10 / 4 / 12;
+  grid-area: 2 / 9 / 4 / 12;
 }
 .video {
   grid-area: 2 / 6 / 4 / 7;
